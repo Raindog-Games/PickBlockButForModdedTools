@@ -32,11 +32,11 @@ public class QuickPickModdedTool
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
     	// Save keyBindings 
-        keyBindings = new KeyMapping[2];
+        keyBindings = new KeyMapping[4];
         keyBindings[0] = new KeyMapping("key.quickpickmoddedtool.break", InputConstants.KEY_B, "category.quickpickmoddedtool.utils");
         keyBindings[1] = new KeyMapping("key.quickpickmoddedtool.save", InputConstants.KEY_V, "category.quickpickmoddedtool.utils"); 
         keyBindings[2] = new KeyMapping("key.quickpickmoddedtool.pickarang", InputConstants.KEY_Y, "category.quickpickmoddedtool.utils");
-        keyBindings[2] = new KeyMapping("key.quickpickmoddedtool.atomicdisassembler", InputConstants.KEY_X, "category.quickpickmoddedtool.utils");
+        keyBindings[3] = new KeyMapping("key.quickpickmoddedtool.atomicdisassembler", InputConstants.KEY_X, "category.quickpickmoddedtool.utils");
         for (int i = 0; i < keyBindings.length; i++) {
         	ClientRegistry.registerKeyBinding(keyBindings[i]);
         }
