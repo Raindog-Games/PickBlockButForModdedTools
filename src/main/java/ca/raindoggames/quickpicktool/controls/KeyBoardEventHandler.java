@@ -23,7 +23,6 @@ public class KeyBoardEventHandler {
 			Minecraft minecraft = Minecraft.getInstance();
 			LocalPlayer player = minecraft.player;
 			helper.selectPickarang(player.getInventory(), minecraft.gameMode);
-			event.setCanceled(true);
 		}
 		
 		// atomic disassembler
@@ -31,7 +30,6 @@ public class KeyBoardEventHandler {
 			Minecraft minecraft = Minecraft.getInstance();
 			LocalPlayer player = minecraft.player;
 			helper.selectAtomicDisassembler(player.getInventory(), minecraft.gameMode);
-			event.setCanceled(true);
 		}
 	}
 }
