@@ -1,4 +1,4 @@
-package ca.raindoggames.quickpicktool.inventory;
+package ca.raindoggames.quickpickmoddedtool.inventory;
 
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.nbt.ListTag;

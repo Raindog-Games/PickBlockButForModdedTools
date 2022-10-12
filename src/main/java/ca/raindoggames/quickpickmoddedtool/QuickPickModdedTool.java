@@ -1,4 +1,4 @@
-package ca.raindoggames.quickpicktool;
+package ca.raindoggames.quickpickmoddedtool;
 
 import net.minecraft.client.KeyMapping;
 import net.minecraftforge.client.ClientRegistry;

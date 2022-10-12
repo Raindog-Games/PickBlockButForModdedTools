@@ -1,4 +1,4 @@
-package ca.raindoggames.quickpicktool.blocktags;
+package ca.raindoggames.quickpickmoddedtool.blocktags;
 
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;

@@ -1,8 +1,8 @@
 package ca.raindoggames.quickpicktool.controls;
 
-import ca.raindoggames.quickpicktool.QuickPickModdedTool;
-import ca.raindoggames.quickpicktool.blocktags.ToolBlockTags;
-import ca.raindoggames.quickpicktool.inventory.PlayerInventoryHelper;
+import ca.raindoggames.quickpickmoddedtool.QuickPickModdedTool;
+import ca.raindoggames.quickpickmoddedtool.blocktags.ToolBlockTags;
+import ca.raindoggames.quickpickmoddedtool.inventory.PlayerInventoryHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

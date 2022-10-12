@@ -62,10 +62,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'quickpicktool'
+            property 'forge.enabledGameTestNamespaces', 'quickpickmoddedtool'
 
             mods {
-                quickpicktool {
+                quickpickmoddedtool {
                     source sourceSets.main
                 }
             }
@@ -79,10 +79,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'quickpicktool'
+            property 'forge.enabledGameTestNamespaces', 'quickpickmoddedtool'
 
             mods {
-                quickpicktool {
+                quickpickmoddedtool {
                     source sourceSets.main
                 }
             }
@@ -107,10 +107,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'quickpicktool'
+            property 'forge.enabledGameTestNamespaces', 'quickpickmoddedtool'
 
             mods {
-                quickpicktool {
+                quickpickmoddedtool {
                     source sourceSets.main
                 }
             }
@@ -124,10 +124,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'quickpicktool', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'quickpickmoddedtool', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                quickpicktool {
+                quickpickmoddedtool {
                     source sourceSets.main
                 }
             }
@@ -171,7 +171,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "quickpicktool",
+                "Specification-Title"     : "quickpickmoddedtool",
                 "Specification-Vendor"    : "raindoggames",
                 "Specification-Version"   : version, // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
@@ -208,10 +208,11 @@ tasks.withType(JavaCompile).configureEach {
 curseforge {
 	apiKey = ''
 	project {
-		id = '670189'
+		id = ''
 		changelog = '''
-		- Corrected crimson_stem blocks
-		- Added glowstone block
+		Pick Block But For Tools now works with modded tools
+		- supports Quark
+		- supports Mekanism
 		'''
 		releaseType = 'release'
 		addGameVersion '1.18.2'
