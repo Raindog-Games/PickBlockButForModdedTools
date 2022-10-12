@@ -6,7 +6,7 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.InputEvent.KeyInputEvent;
+import net.minecraftforge.client.event.InputEvent.Key;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -15,7 +15,7 @@ public class KeyBoardEventHandler {
 	static PlayerInventoryHelper helper = new PlayerInventoryHelper();
 	
 	@SubscribeEvent
-	public static void onEvent(KeyInputEvent event) {
+	public static void onEvent(Key event) {
 		KeyMapping[] keyBindings = QuickPickModdedTool.keyBindings;
 		
 		// pickarang
