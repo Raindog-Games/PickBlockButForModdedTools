@@ -208,7 +208,7 @@ tasks.withType(JavaCompile).configureEach {
 curseforge {
 	apiKey = ''
 	project {
-		id = ''
+		id = '688149'
 		changelog = '''
 		Pick Block But For Tools now works with modded tools
 		- supports Quark

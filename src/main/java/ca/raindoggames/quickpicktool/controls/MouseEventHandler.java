@@ -119,25 +119,5 @@ public class MouseEventHandler {
 				event.setCanceled(true);
 			}
 		}
-		
-		// pickarang
-		if (keyBindings[2].isDown()) {
-			if (event.isPickBlock()) {
-				Minecraft minecraft = Minecraft.getInstance();
-				LocalPlayer player = minecraft.player;
-				helper.selectPickarang(player.getInventory(), minecraft.gameMode);
-			}
-			event.setCanceled(true);
-		}
-		
-		// atomic disassembler
-		if (keyBindings[3].isDown()) {
-			if (event.isPickBlock()) {
-				Minecraft minecraft = Minecraft.getInstance();
-				LocalPlayer player = minecraft.player;
-				helper.selectAtomicDisassembler(player.getInventory(), minecraft.gameMode);
-			}
-			event.setCanceled(true);
-		}
 	}
 }
